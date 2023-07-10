@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">OLFW</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+          <!-- <div class="mem">
+                <ul>
+                    <li>S.GOWTHAM – 22I315 </li>
+                    <li>A.C.SANJAY-22I355  </li>
+                    <li> CHANDHANU – 22I378
+                    </li>
+                    <li>R.RETHICK – 22I350
+                    </li>
+                    <li> S.SANJAY-22I356
+                    </li>
+                </ul>
+            </div>
+        -->
+        
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>WEB LEARNING & <br><span>FORUM</span> </h1>
+            <p class="par">Join our educational forum to connect with experts,
+                <br>share knowledge, and explore new ideas in the field of education.
+                <br> <b>OUR AICTE PROJECT.<b> </p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <form class="form" action="signin" method="post" >
+                    {% csrf_token %}
+                    <h2>USER ACCOUNT</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="pass" placeholder="Enter Password Here">
+                    <button class="btnn" type="submit"><a href="logged">LOGIN</a></button>
+                    <p class="link">Don't have an account<br>
+                    <a href="/signup">Sign up </a> here</a></p>
+                   </form>
+                </div>
+                    
+                </div>
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter the wrong page</title>
+   
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+background-image: url("/static/images/1..jpg");
+width: 100%;
+height: auto;
+background-size: cover;
+}
+.nxtpage{
+text-align: center;
+justify-content: center;
+color: white;
+align-items: center;
+margin-bottom: 500px;
+
+padding: 20px;
+margin-top: 90px;
+display: inline-block;
+margin-left: 90px;
+font-size: 90px;
+
+
+
+}
+.container{
+text-align: center;
+}
+
+    </style>
+</head>
+<body>{% csrf_token %}
+    <div class="container">
+    <div class="nxtpage" id="nxt">
+        <h6>SIGNUP SUCCESSFUL</h6>
+        <h7><a href="/">BACK TO LOGIN</a></h7>
+    </div>
+</div>
+    
+</body>
+</html>
