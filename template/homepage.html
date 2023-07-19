@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <style> 
+body {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url("/static/images/home.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.feature {
+  text-align: center;
+  width: 300px;
+  margin: 20px;
+}
+
+.feature img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #ff7823;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to Our Website<h1>
+      <p>Discover amazing things with us</p>
+      <a href="#" class="btn"><b>Learn More</b></a>
+    </div>
+    </header>
+
+  
+</body>
+</html>

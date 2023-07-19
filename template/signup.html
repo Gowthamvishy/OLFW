@@ -1,0 +1,51 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form action="signup" method="post">
+        {% csrf_token %}
+        <label>First Name</label>
+        <input type="text" placeholder="" name="fname" >
+        <label>Last Name</label>
+        <input type="text" placeholder="" name="lname" >
+        <label>Email</label>
+        <input type="email" placeholder="" name="email" >
+        <label>Password</label>
+        <input type="password" placeholder="" name="pass1" >
+        <label>Confirm Password</label>
+        <input type="password" placeholder="" name="cpass" >
+        
+        
+          {% for message in messages %}
+          <div class="alert alert-warning" role="alert">
+            {{message}}
+          </div>  
+        {% endfor %}     
+        <input class="sub" type="submit" value="Submit" >
+    </form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#" style="color: #ff7200;">Terms and Condition</a> and <a href="#" style="color: #ff7200;">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="/" style="color: #ff7200;" >Login here</a>
+    </p>
+  </body>
+</html>
+
+  </body>
+</html>
+
